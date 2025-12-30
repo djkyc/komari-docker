@@ -1,0 +1,19 @@
+app = "komari-djkyc"
+primary_region = "hkg"
+
+[build]
+  image = "ghcr.io/djkyc/komari-docker:1.1.3"
+
+[env]
+  TZ = "Asia/Taipei"
+
+[mounts]
+  source = "komari_data"
+  destination = "/app/data"
+
+[http_service]
+  internal_port = 25774
+  force_https = true
+  auto_start_machines = true
+  auto_stop_machines = "off"
+  min_machines_running = 1
