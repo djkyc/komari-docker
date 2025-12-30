@@ -1,4 +1,4 @@
-app = "<APP_NAME>"
+app = "komari-docker"
 primary_region = "hkg"
 
 [build]
