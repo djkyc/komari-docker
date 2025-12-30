@@ -1,4 +1,4 @@
-name:Komari-docker
+name: Komari-docker
 on:
   push:
     branches: [ "main" ]
